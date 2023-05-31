@@ -1,0 +1,23 @@
+<h2>Panini speciali:</h2>
+
+<div class="row">
+  <div class="col-md-4">
+    <div
+      *ngFor="let panino of receivedPanino"
+      class="card text-dark bg-warning mb-3"
+      style="width: 10rem"
+    >
+      <img class="card-img-top" [src]="panino.immagine" alt="Card image cap" />
+      <div class="card-body">
+        <h5 class="card-title">{{ panino.nome }}</h5>
+        <a [routerLink]="['/panini', panino.id]" class="btn btn-primary"
+          >Details</a
+        >
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <router-outlet></router-outlet>
+  </div>
+</div>

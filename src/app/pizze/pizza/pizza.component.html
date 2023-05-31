@@ -1,0 +1,18 @@
+
+<div class="col-md-4">
+  <h2>Dettagli:</h2>
+  <div class="card text-white bg-secondary mb-3" style="width: 20rem">
+    <img class="card-img-top" [src]="pizza.immagine" alt="Card image cap" />
+    <div class="card-body">
+      <h5 class="card-title">ID: {{ pizza.id }}</h5>
+      <h5 class="card-title">Nome: {{ pizza.nome }}</h5>
+      <h5 class="card-title">Prezzo: {{ pizza.prezzo | currency:"EUR" }}</h5>
+      <p class="card-text">
+        Some quick example text to build on the card title and make up the bulk
+        of the card's content.
+      </p>
+      <a class="btn btn-warning" (click)="onEdit()">Edit</a>
+     
+    </div>
+  </div>
+</div>

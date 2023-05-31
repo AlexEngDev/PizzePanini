@@ -1,0 +1,26 @@
+<h3>Creare la nuova pizza:</h3>
+<br /><br />
+<div class="mb-3">
+  <label for="" class="form-label">ID </label>
+  <input type="number" class="form-control" [(ngModel)]="idPizza" />
+</div>
+<div class="mb-3">
+  <label for="" class="form-label">Nome</label>
+  <input type="text" class="form-control" [(ngModel)]="nomePizza" />
+</div>
+
+<div class="mb-3">
+  <label for="" class="form-label">Prezzo "EUR" </label>
+  <input type="number" class="form-control" [(ngModel)]="prezzoPizza" />
+</div>
+
+<div class="mb-3">
+  <label for="" class="form-label">Immagine</label>
+  <input type="text" class="form-control" [(ngModel)]="immaginePizza" />
+</div>
+
+<div class="mb-3">
+  <button class="btn btn-primary" (click)="onAddPizza()">
+    Creare la pizza
+  </button>
+</div>

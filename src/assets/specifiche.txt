@@ -1,0 +1,16 @@
+1. Creare un app per la gestione di una pizzeria( gestione pizze, gestione panini)
+
+2. Creare due principali component pizze e panini con le rispettive rotte
+
+3. L'accesso alle rotte deve essere limitato ai soli utenti Amministratori, quindi solo questi potranno vedere i menu.
+
+4. sistemare le viste login e logout, cioè far sparire i rispettivi pulsanti e cambiare la voce di menu. Creare un form ("username", "password") per verificare la login
+
+5. Mostrare in entrambi i component un lista di panini e pizze.
+5.b. Mostrare il dettaglio singola pizza e panino al click su una voce.
+
+6. prevedere l'aggiunta di panini e pizze all'interno delle viste stesse dei component
+
+7. inserire una pagina di error 404
+
+8. nel file gestione-utenti.service.ts creare una lista di utenti da verificare quando verrà fatta la login vera, cioè con un form da compilare.

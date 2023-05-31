@@ -1,0 +1,28 @@
+<div class="text-center">
+  <a
+    *ngIf="!buttonChange"
+    class="btn btn-primary mb-3 mt-3"
+    role="button"
+    (click)="onLogin()"
+    >Login</a
+  >
+  <br />
+  <a
+    *ngIf="buttonChange"
+    class="btn btn-primary mb-3"
+    role="button"
+    (click)="onLogout()"
+    >Logout</a
+  >
+</div>
+
+<!--<div><button type="button" (click)="onClick()">Click</button></div>-->
+<div class="mb-3" *ngIf="!buttonChange">
+  <label for="" class="form-label">Username</label>
+  <input [(ngModel)]="userUsername" type="text" class="form-control" />
+</div>
+
+<div class="mb-3" *ngIf="!buttonChange">
+  <label for="" class="form-label">Password</label>
+  <input [(ngModel)]="userPassword" type="text" class="form-control" />
+</div>

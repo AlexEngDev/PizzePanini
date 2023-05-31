@@ -1,0 +1,7 @@
+<h2 *ngIf="username; else noUser">Benvenuto {{ username }}</h2>
+
+<ng-template #noUser>
+  <h2>Gentile Utente. Hai sbagliato con password.</h2>
+  <br />
+  <h2>Prosegui come ospite o fail <a routerLink="/login">Login</a></h2>
+</ng-template>

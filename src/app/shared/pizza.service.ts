@@ -56,7 +56,7 @@ getPizzaById(id: number): Pizza{
 
 
 updatePizza(id: number, nuoveInfo:{nome: string, prezzo: number, immagine: string}){
-  // questo metodo deve modificare il singolo docente nell'array
+  // questo metodo deve modificare il singolo  nell'array
   const pizzaModificata = this.listaPizze.find(
     (pzz) => {
       return pzz.id === id;

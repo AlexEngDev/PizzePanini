@@ -23,14 +23,11 @@ bools: boolean;
 
 
   ngOnInit(): void {
-    //this.fun()
   }
 
  fun(){
-  //console.log( this.authServ.controllaRuolo());
   this.authServ.controllaRuolo();
   this.bools === this.authServ.controllaRuolo();
-  //console.log(this.bools);
  }
 
 

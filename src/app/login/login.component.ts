@@ -24,6 +24,7 @@ export class LoginComponent implements OnInit, DoCheck{
 
 
   ngDoCheck(): void {
+
   }
 
   ngOnInit(): void {
@@ -37,18 +38,13 @@ export class LoginComponent implements OnInit, DoCheck{
     this.userServ.setUserNamePass(this.userUsername, this.userPassword)
 
     this.userServ.login();
-
-    
-    this.router.navigate(['/']);
+    this.refresh()
+   // this.router.navigate(['/']);
   }
 
-/*
-  onLogin(){
-    this.loggedIn = true;
-    this.userServ.login();
-    this.router.navigate(['/']);
-  }
-*/
+  refresh(): void {
+    window.location.reload();
+}
 
 
   onLogout(){
@@ -64,10 +60,7 @@ export class LoginComponent implements OnInit, DoCheck{
 
   onClick(){
     this.buttonChange = this.authServ.controllaRuolo()
-    console.log(this.buttonChange);
-
-
-}
+  }
 
 
 }

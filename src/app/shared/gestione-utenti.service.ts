@@ -18,16 +18,11 @@ export class GestioneUtentiService {
 setUserNamePass(usName:string, usPass:string){
  this.utenteLoggato.username = usName
  this.utenteLoggato.password = usPass
- //console.log(usName);
- //console.log(usPass);
- //console.log( this.utenteLoggato.username);
- //console.log( this.utenteLoggato.password);
 
 }
 
 
   login(){
-    console.log( this.utenteLoggato.password);
     if(this.utenteLoggato.password === "12345"){
       localStorage.setItem("roleUtenteLoggato", this.utenteLoggato.role);
       localStorage.setItem("usernameUtentLoggato", this.utenteLoggato.username);

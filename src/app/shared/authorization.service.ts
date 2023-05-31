@@ -15,7 +15,7 @@ export class AuthorizationService {
     let roleUtenteLoggato = localStorage.getItem('roleUtenteLoggato');
     let usernameUtentLoggato = localStorage.getItem('usernameUtentLoggato');
     let passwordUtentLoggato = localStorage.getItem('passwordUtentLoggato');
-    console.log(roleUtenteLoggato);
+
 
 
    // if(roleUtenteLoggato === "Admin" && usernameUtentLoggato === "Pippo" && passwordUtentLoggato === "12345"){

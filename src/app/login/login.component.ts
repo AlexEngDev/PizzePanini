@@ -21,14 +21,19 @@ export class LoginComponent implements OnInit, DoCheck{
 
 
   loggedIn: boolean;
-
+  user:string
+  checkPassword:boolean = false
 
   ngDoCheck(): void {
+    //if(this.user && this.user != localStorage.getItem('usernameUtentLoggato')){
+     // this.user = localStorage.getItem('passwordUtentLoggato')
+   // }
 
   }
 
   ngOnInit(): void {
     this.onClick()
+    this.user = localStorage.getItem('usernameUtentLoggato');
   }
 
 
@@ -38,6 +43,7 @@ export class LoginComponent implements OnInit, DoCheck{
     this.userServ.setUserNamePass(this.userUsername, this.userPassword)
 
     this.userServ.login();
+
     this.refresh()
    // this.router.navigate(['/']);
   }
@@ -51,6 +57,7 @@ export class LoginComponent implements OnInit, DoCheck{
     this.loggedIn = false;
     this.userServ.logout();
     this.buttonChange = false
+    this.refresh()
   }
 
 

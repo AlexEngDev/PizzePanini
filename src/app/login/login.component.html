@@ -27,4 +27,10 @@
   <input [(ngModel)]="userPassword" type="text" class="form-control" />
 </div>
 
-
+<div>
+  <div *ngIf="user; else noLogged">Benvenuto, sei loggato come:  {{ user }}</div>
+  <ng-template #noLogged>
+    <h2>Gentile Utente, non sei loggato</h2>
+  </ng-template>
+  <h2 *ngIf="checkPassword">Password errato</h2>
+</div>
